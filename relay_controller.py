@@ -57,46 +57,44 @@ tempoList = [23, 24, 25, 8, 7, 1]
 rhythmList = [12, 16]
 
 
-# Will be first function called, build all playlists before
-# streaming music
-def constructPlaylists():
-    # Build deques for my playlists, will alter as I please
-    # Songs will be played through omxplayer unless
-    # I feel like building my own audio player
 
-    # Will need to use popleft to play the first song in the queue
-    absolute_bops = deque()
-    absolute_bopsSongs = ["durga.mp3", "everything.mp3", "festival_of_lights.mp3",
-                          "freaks.mp3", "harder_better_faster_stronger_bass_boosted.mp3",
-                          "i_like_to_move_it.mp3", "live_your_life.mp3", "melody.mp3",
-                          "moksha.mp3", "neverland.mp3", "party_till_we_die.mp3",
-                          "psy_or_die.mp3", "punjabi.mp3", "strong.mp3",
-                          "this_is_nightlife_remix.mp3"]
-    for song in absolute_bopsSongs:
-        absolute_bops.append(absolute_bopsSongs[song])
+# Build deques for my playlists, will alter as I please
+# Songs will be played through omxplayer unless
+# I feel like building my own audio player
 
-    ariana_grande = deque()
-    ariana_grandeSongs = ["bang_bang.mp3", "breathin.mp3", "into_you.mp3",
-                          "no_tears_left_to_cry.mp3", "one_last_time.mp3",
-                          "problem.mp3", "side_to_side.mp3"]
-    for song in ariana_grandeSongs:
-        ariana_grande.append(ariana_grandeSongs[song])
+# Will need to use popleft to play the first song in the queue
+absolute_bops = deque()
+absolute_bopsSongs = ["durga.mp3", "everything.mp3", "festival_of_lights.mp3",
+                      "freaks.mp3", "harder_better_faster_stronger_bass_boosted.mp3",
+                      "i_like_to_move_it.mp3", "live_your_life.mp3", "melody.mp3",
+                      "moksha.mp3", "neverland.mp3", "party_till_we_die.mp3",
+                      "psy_or_die.mp3", "punjabi.mp3", "strong.mp3",
+                      "this_is_nightlife_remix.mp3"]
+for song in absolute_bopsSongs:
+    absolute_bops.append(absolute_bopsSongs[song])
 
-    britney_spears = deque()
-    britney_spearsSongs = ["baby_one_more_time.mp3", "circus.mp3", "gimme_more.mp3",
-                          "hold_it_against_me.mp3", "i_wanna_go.mp3",
-                          "if_u_seek_amy.mp3", "oops_i_did_it_again.mp3",
-                          "three.mp3", "till_the_world_ends.mp3", "toxic.mp3",
-                          "womanizer.mp3", "work_bitch_remix.mp3"]
-    for song in britney_spearsSongs:
-        britney_spears.append(ariana_grandeSongs[song])
+ariana_grande = deque()
+ariana_grandeSongs = ["bang_bang.mp3", "breathin.mp3", "into_you.mp3",
+                      "no_tears_left_to_cry.mp3", "one_last_time.mp3",
+                      "problem.mp3", "side_to_side.mp3"]
+for song in ariana_grandeSongs:
+    ariana_grande.append(ariana_grandeSongs[song])
 
-    cascada = deque()
-    cascadaSongs = ["bad_boy.mp3", "dangerous.mp3", "evacuate_the_dancefloor.mp3",
-                    "everytime_we_touch.mp3", "miracle.mp3",
-                    "ready_or_not.mp3"]
-    for song in cascadaSongs:
-        cascada.append(cascadaSongs[song])
+britney_spears = deque()
+britney_spearsSongs = ["baby_one_more_time.mp3", "circus.mp3", "gimme_more.mp3",
+                      "hold_it_against_me.mp3", "i_wanna_go.mp3",
+                      "if_u_seek_amy.mp3", "oops_i_did_it_again.mp3",
+                      "three.mp3", "till_the_world_ends.mp3", "toxic.mp3",
+                      "womanizer.mp3", "work_bitch_remix.mp3"]
+for song in britney_spearsSongs:
+    britney_spears.append(ariana_grandeSongs[song])
+
+cascada = deque()
+cascadaSongs = ["bad_boy.mp3", "dangerous.mp3", "evacuate_the_dancefloor.mp3",
+                "everytime_we_touch.mp3", "miracle.mp3",
+                "ready_or_not.mp3"]
+for song in cascadaSongs:
+    cascada.append(cascadaSongs[song])
 
 # Will add more playlists as I feel the need to add them
 
