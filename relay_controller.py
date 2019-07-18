@@ -115,7 +115,6 @@ def relay_open(pin_number):
 if __name__ == "__main__":
     try:
         # Where all processes will be executed
-        constructPlaylists()
         while cascada.count() != 0:
             song_name = cascada.popleft()
             os.system("omxplayer /home/pi/lightshowpi/music/cascada/{}".format(song_name))
