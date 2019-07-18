@@ -33,8 +33,8 @@ def convert():
 
         for line_from_file in file:
             # Add appropriate file name extensions
-            song_mp3 = line_from_file.concat(".mp3")
-            song_wave = line_from_file.concat(".wave")
+            song_mp3 = line_from_file + ".mp3"
+            song_wave = line_from_file + ".wave"
 
             # Create path_to_song and path_to_output by
             # concatenating path and song together
