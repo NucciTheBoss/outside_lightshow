@@ -73,6 +73,8 @@ def convert():
             except IOError:
                 print("Something went wrong!")
 
+            print("All done!")
+
 
 # Loop to call function
 if __name__=="__main__":
