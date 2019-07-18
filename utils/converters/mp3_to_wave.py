@@ -35,7 +35,7 @@ def convert():
         line_from_file = line_from_file.rstrip('\n')  # remove newline character
         # Add appropriate file name extensions
         song_mp3 = line_from_file + ".mp3"
-        song_wave = line_from_file + ".wave"
+        song_wave = line_from_file + ".wav"
 
         # Create path_to_song and path_to_output by
         # concatenating path and song together
@@ -48,7 +48,7 @@ def convert():
             sound = AudioSegment.from_file(path_to_song, format="mp3")
 
             # Export song as wave
-            file_handle = sound.export(path_to_output, format="wave")
+            file_handle = sound.export(path_to_output, format="wav")
         except IOError:
             print("Something went wrong!")
 
