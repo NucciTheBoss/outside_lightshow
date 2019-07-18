@@ -23,7 +23,7 @@ def convert():
 
     # Ask user for .txt files with song names in them
     # Txt files will be stored in the same directory as this program
-    print("Please insert txt file as 'songnames.txt'"\n)
+    print("Please insert txt file as 'songnames.txt'\n")
     song_names = input("Insert txt file containing song names here: ")
     print("\n")
 
