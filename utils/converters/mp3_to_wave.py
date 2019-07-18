@@ -31,7 +31,29 @@ def convert():
     with open(song_names, "r") as file:
         line_from_file = file.readline()
 
+        # So we also get the first line of the txt file
+        line_from_file = line_from_file.rstrip('\n')  # remove newline character
+        # Add appropriate file name extensions
+        song_mp3 = line_from_file + ".mp3"
+        song_wave = line_from_file + ".wave"
+
+        # Create path_to_song and path_to_output by
+        # concatenating path and song together
+        path_to_song = path_to_mp3 + song_mp3
+        path_to_output = path_to_wave + song_wave
+
+        # try and except statement to catch if something is wrong
+        try:
+            # Import song as mp3
+            sound = AudioSegment.from_file(path_to_song, format="mp3")
+
+            # Export song as wave
+            file_handle = sound.export(path_to_output, format="wave")
+        except IOError:
+            print("Something went wrong!")
+
         for line_from_file in file:
+            line_from_file = line_from_file.rstrip('\n')  # remove newline character
             # Add appropriate file name extensions
             song_mp3 = line_from_file + ".mp3"
             song_wave = line_from_file + ".wave"
